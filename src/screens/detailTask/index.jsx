@@ -91,37 +91,41 @@ const onDeleteTask_2=(id)=>{
       />
      </View>
      <CustomModal animationType='fade' modalVision={modalVision} transparent>
-        <View style={styles.modalAll}>
-          <View style={styles.modalContainer}>
-            <Text style={styles.modalTitle}>Detalle de la tarea</Text>
-          </View>
-          <View style={styles.modalContainer}>
-            <Text style={styles.modalWarn}>😭¿Deseas eliminar la tarea?😭</Text>
-          </View>
-          <View style={styles.modalContainer}>
-            <Text style={styles.modalTask}>{taskSelected.value}</Text>
-          </View>
-          <View style={styles.modalButton}>
-            <Button title='Eliminar' onPress={()=>onDeleteTask(taskSelected.id)} color='#6F8AB7'/>
-            <Button title='Cancelar' onPress={()=>setModalVision(!modalVision)} color='#DFDEE3'/>
+        <View style={styles.modalBox}>
+          <View style={styles.modalAll}>
+            <View style={styles.modalContainer}>
+              <Text style={styles.modalTitle}>Detalle de la tarea</Text>
+            </View>
+            <View style={styles.modalContainer}>
+              <Text style={styles.modalWarn}>😭¿Deseas eliminar la tarea?😭</Text>
+            </View>
+            <View style={styles.modalContainer}>
+              <Text style={styles.modalTask}>{taskSelected.value}</Text>
+            </View>
+            <View style={styles.modalButton}>
+              <Button title='Eliminar' onPress={()=>onDeleteTask(taskSelected.id)} color='#6F8AB7'/>
+              <Button title='Cancelar' onPress={()=>setModalVision(!modalVision)} color='#DFDEE3'/>
+            </View>
           </View>
         </View>
      </CustomModal>
 
      <CustomModal animationType='slide' modalVision={modalVision_2} transparent>
-        <View style={styles.modalAll}>
-          <View style={styles.modalContainer}>
-            <Text style={styles.modalTitle}>Detalle de la tarea</Text>
-          </View>
-          <View style={styles.modalContainer}>
-            <Text style={styles.modalWarn}>😻¡¡Completaste tu Tarea!!😻</Text>
-          </View>
-          <View style={styles.modalContainer}>
-            <Text style={styles.modalTask}>{taskSelected.value}</Text>
-          </View>
-          <View style={styles.modalButton}>
-            <Button title='¡Vamos!' onPress={()=>onDeleteTask_2(taskSelected.id)} color='#6F8AB7'/>
-            <Button title='Cancelar' onPress={()=>setModalVision_2(!modalVision_2)} color='#DFDEE3'/>
+        <View style={styles.modalBox}>
+          <View style={styles.modalAll}>
+            <View style={styles.modalContainer}>
+              <Text style={styles.modalTitle}>Detalle de la tarea</Text>
+            </View>
+            <View style={styles.modalContainer}>
+              <Text style={styles.modalWarn}>😻¡¡Completaste tu Tarea!!😻</Text>
+            </View>
+            <View style={styles.modalContainer}>
+              <Text style={styles.modalTask}>{taskSelected.value}</Text>
+            </View>
+            <View style={styles.modalButton}>
+              <Button title='¡Vamos!' onPress={()=>onDeleteTask_2(taskSelected.id)} color='#6F8AB7'/>
+              <Button title='Cancelar' onPress={()=>setModalVision_2(!modalVision_2)} color='#DFDEE3'/>
+            </View>
           </View>
         </View>
      </CustomModal>

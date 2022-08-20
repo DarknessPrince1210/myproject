@@ -1,9 +1,13 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
+
 import colors from "../../constants/colors";
+
+const{width,height}=Dimensions.get('window');
 
 export const styles=StyleSheet.create({
       container: {
         height:'100%',
+        minHeight:1000,
         backgroundColor: colors.background,
       },
       inputContainer: {
@@ -52,14 +56,15 @@ export const styles=StyleSheet.create({
         backgroundColor:colors.background
         
       },
+      modalBox:{
+        alignItems:'center'
+      },
       modalAll:{
         backgroundColor:colors.modalBox,
         height: 310,
         width: 345,
-        opacity:10,
         marginTop:150,
         borderRadius:40,
-        marginLeft:7
         
       },
       modalContainer:{

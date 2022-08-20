@@ -1,4 +1,4 @@
-import { Button, FlatList, Modal, SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { Button, FlatList, Image, Modal, SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { CustomInput, CustomModal } from '../../components/index';
 import React,{useState} from "react";
 
@@ -13,7 +13,8 @@ const WelcomeScreen=({onFirstScreen})=>{
   return (
     <View style={styles.container}>
         <View style={styles.header}>
-            <Text style={styles.title}>Studygram</Text>
+            {/* <Text style={styles.title}>Studygram</Text> */}
+            <Image source={require('../../../assets/studygram.png')} style={styles.img}/>
         </View>
         <View style={styles.mainBox}>
             <Button 
