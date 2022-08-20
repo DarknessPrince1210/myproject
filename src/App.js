@@ -20,7 +20,6 @@ export default function App() {
   }
 
   let content=<WelcomeScreen onFirstScreen={onFirstScreen}/>;
-  
   if (screenNumber==1) {
     content=<TaskScreen/>
   }else if (screenNumber==0) {
