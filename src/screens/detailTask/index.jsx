@@ -40,6 +40,7 @@ const onDeleteTask=(id)=>{
   setModalVision(!modalVision);
 }
 
+
 const onHandlerModal=(id)=>{
   setTaskSelected(taskList.find(item=>item.id===id));
   setModalVision(!modalVision);
@@ -74,7 +75,7 @@ const onDeleteTask_2=(id)=>{
 
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
      <CustomInput
       item={item}
       onChangeTask={onChangeTask}
@@ -131,7 +132,7 @@ const onDeleteTask_2=(id)=>{
      </CustomModal>
      
      
-    </View>
+    </SafeAreaView>
   );    
 }
 

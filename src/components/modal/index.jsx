@@ -9,7 +9,7 @@ const CustomModal=({children,animationType,modalVision,transparent})=>{
         transparent
         >
             {children}
-     </Modal>
+        </Modal>
     )
 }
 

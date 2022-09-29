@@ -9,7 +9,7 @@ export const styles=StyleSheet.create({
     },
     header:{
         marginTop:25,
-        height: 120,
+        height: 90,
         backgroundColor:colors.header,
         padding:20,
         alignItems:'center',
@@ -17,8 +17,8 @@ export const styles=StyleSheet.create({
         
     },
     img:{
-        width:170,
-        height:120,
+        width:340,
+        height:'100%',
         
     },
     title:{

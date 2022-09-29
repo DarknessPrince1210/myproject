@@ -2,6 +2,7 @@ import {Button, TextInput, View} from "react-native";
 import React, {useState} from "react";
 
 import { Entypo } from '@expo/vector-icons';
+import { SafeAreaView } from "react-native-web";
 import { TouchableOpacity } from "react-native";
 import colors from "../../constants/colors";
 import { styles } from "./style";

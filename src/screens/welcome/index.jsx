@@ -11,10 +11,10 @@ const WelcomeScreen=({onFirstScreen})=>{
     var selectedScreen=1;
     
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
         <View style={styles.header}>
             {/* <Text style={styles.title}>Studygram</Text> */}
-            <Image source={require('../../../assets/studygram.png')} style={styles.img}/>
+            <Image source={require('../../../assets/studygram_horizontal.png')} style={styles.img}/>
         </View>
         <View style={styles.mainBox}>
             <Button 
@@ -23,7 +23,7 @@ const WelcomeScreen=({onFirstScreen})=>{
             onPress={()=>onFirstScreen(selectedScreen)}
             />
         </View>
-    </View>
+    </SafeAreaView>
   );    
 }
 
